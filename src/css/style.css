@@ -1,0 +1,292 @@
+/* -------- Global --------- */
+
+.card {
+    box-shadow: 0 4px 8px 5px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 10px rgba(0,0,0,0.2);
+}
+
+/* ------ Header ------- */
+.header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.nav {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: none;
+}
+
+.nav li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.header .nav li a {
+  display: block;
+  text-align: center;
+  padding: 15px 15px;
+}
+
+.header .nav li a:hover {
+  background-color: red;
+}
+
+/* --------- Footer ---------- */
+
+.footer {
+  display: block;
+  height: 50px;
+  background-color: black;
+  opacity: 0.78;
+}
+
+.footer .nav {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow: none;
+}
+
+.footer li {
+  margin: 0 15px;
+}
+
+/*.image {
+  background-image: url("../images/restaurant1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}*/
+
+/* About Us */
+.sources.list {
+  list-style: none;
+}
+
+.sources.list.card {
+  padding-bottom: 10px;
+}
+
+.list.sources .unsplashlink {
+  background-color:black;
+  color:white;
+  text-decoration:none;
+  padding:4px 6px;
+  font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  line-height:1.2;
+  display:inline-block;
+  border-radius:3px;
+}
+
+
+/* Section */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.section.search {
+  background-image: url('../images/restaurant1.jpg');
+  background-size: cover;
+  color: #11DFC7;
+}
+
+.section.text {
+  padding: 8rem 0 7rem !important;
+}
+
+.section.sources {
+  padding-top: 0 !important;
+}
+
+.search input[type="text"] {
+  width: 400px;
+}
+
+/* image */
+.image-container {
+  position: relative;
+}
+.image {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.image + .image {
+  display: none;
+}
+
+/* Values */
+.values {
+  color: #000;
+  padding-bottom: 5rem;
+}
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* Categories */
+.map-container {
+  /* background-image: url('../images/restaurant1.jpeg');
+  background-size: cover; */
+  background: rgba(39, 86, 214, 0.801);
+  color: #fff;
+}
+.map-container .section-description {
+  margin-bottom: 4rem;
+}
+
+.map-container .container .row .two-third p + div {
+  display: block;
+  height: 600px;
+}
+
+.u-max-full-width.google-map {
+  width: auto;
+  height: auto !important;
+}
+
+/* Details */
+  
+.section.details-list .container .row ul {
+  list-style-type: none;
+  height: 600px;
+  overflow: auto;
+}
+ 
+.section.details-list .container .row h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+.section.details-list .container .row li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+.section.details-list .container .row li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+.section.details-list .container .row li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+.section.details-list .container .row li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+ /* Section List */
+.opening-hours {
+  list-style: none;
+}
+
+.reviews {
+  list-style: none;
+  margin: 50px 0;
+  border: 2px solid black;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .welcome {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .image {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .image + .image {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .home-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .welcome {
+    height: 190px;
+  }
+  .home-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .welcome {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .image + .image {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .map-container {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+  .welcome {
+    padding: 22rem 0;
+  }
+  .home-heading {
+    font-size: 3.0rem;
+  }
+  .image {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .image + .image {
+    top: -14rem;
+    max-height: 570px;
+  }
+}

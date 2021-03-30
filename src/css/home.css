@@ -1,0 +1,149 @@
+
+/* Section */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.section.search {
+  background-image: url('../images/restaurant1.jpg');
+  background-size: cover;
+  color: #11DFC7;
+}
+
+.section.text {
+
+}
+
+.search input[type="text"] {
+  width: 400px;
+}
+
+/* image */
+.image-container {
+  position: relative;
+}
+.image {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.image + .image {
+  display: none;
+}
+
+/* Values */
+.values {
+  color: #000;
+  padding-bottom: 5rem;
+}
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* Categories */
+.map-container {
+  /* background-image: url('../images/restaurant3.jpg'); */
+  /* background-size: cover; */
+  background: red;
+  color: #fff;
+}
+.map-container .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .welcome {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .image {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .image + .image {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .home-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .welcome {
+    height: 190px;
+  }
+  .home-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .welcome {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .image + .image {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+  .welcome {
+    padding: 22rem 0;
+  }
+  .home-heading {
+    font-size: 3.0rem;
+  }
+  .image {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .image + .image {
+    top: -14rem;
+    max-height: 570px;
+  }
+}
